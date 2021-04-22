@@ -54,7 +54,7 @@ kubectl edit pod inspect -n core
 Edit the Pod to change the Image details (Declarative)
 
 ```shell
-vi inspect.yml
+$ vi inspect.yml
 
 spec:
   containers:
