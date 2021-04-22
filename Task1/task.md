@@ -1,4 +1,4 @@
-* The Pod should run in the core namespace. The namespace should be create first
+* The Pod should run in the core namespace. The namespace should be create first.
 
 * The name of the Pod should be inspect
 
