@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: deploy
+  name: deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: deploy
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 5
+      maxUnavailable: 10
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: deploy
+    spec:
+      containers:
+      - image: nginx
+        name: nginx
+        resources: {}
