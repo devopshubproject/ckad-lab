@@ -1,0 +1,1 @@
+A Deployment is failing on the cluster due to an incorrect image being specified. Locate the deployment, and fix the problem.
