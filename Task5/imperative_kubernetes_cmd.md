@@ -14,10 +14,10 @@ Create a ServiceAccount
 kubectl create serviceaccount app-service -n ns-prd
 ```
 
-Create a Pod
+Create a Deployment
 
 ```shell
-kubectl run app --image=nginx --restart=Always -n ns-prd
+kubectl create deployment app --image=nginx --restart=Always -n ns-prd
 ```
 
 Get all the namespace

@@ -1,7 +1,7 @@
 Task is to create a Secret and consume the Secret in a Pod using environment variables 
 
 
-#Solution
+# Solution
 
 Create a secret and add value to the key
 
@@ -49,7 +49,7 @@ type: Opaque
 Check by decoding the secret
 
 ```shell
-echo "dmFsdWUx" | decode64 -d
+echo "dmFsdWUx" | base64 -d
 ```
 
 Create a Pod definition using run cmd
