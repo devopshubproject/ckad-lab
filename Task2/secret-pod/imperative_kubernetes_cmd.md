@@ -49,7 +49,7 @@ type: Opaque
 Check by decoding the secret
 
 ```shell
-echo "dmFsdWUx" | decode64 -d
+echo "dmFsdWUx" | base64 -d
 ```
 
 Create a Pod definition using run cmd
